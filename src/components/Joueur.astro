@@ -1,0 +1,78 @@
+---
+export interface Props {
+	nom: string;
+	description: string;
+	photo: string;
+	continent: string;
+}
+
+const { nom, description, photo, continent } = Astro.props;
+---
+<div class=`joueur ${continent}`>
+	<h3 class="nom">{nom} </h3>
+     
+	<img src={photo} alt="" width="300" class="photo"/> 
+
+	<p class="description">
+		{description}	
+	</p>
+
+</div>
+    
+<style>
+.joueur{
+border: groove 1em rgb(100, 0, 222);
+border-radius: 2em;
+margin:30px;
+padding: 20px;
+}
+.joueur.afrique{
+	border-color: red;
+
+}
+.photo{
+min-width:350px;max-height: 400px;
+}
+.nom
+{
+color:black;
+}
+.description{
+	color: rgb(0, 0, 0);
+}
+
+.joueur.europe{
+
+border-color: skyblue;
+
+}
+
+.joueur.amériquedusud{
+border-color:white ;
+
+}
+
+.joueur.asie{
+border-color:gold;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>

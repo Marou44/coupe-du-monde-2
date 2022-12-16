@@ -1,19 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Histoirecdm from '../components/Histoirecdm.astro';
+import Arrangementjoueur from '../components/Arrangementjoueur.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
+	<main class="container">
 		<h1>L'Histoire de la coupe du monde au file des années</h1>
 
  <p>Aujourd'hui la coupe du monde est un évenement attendu par des milliers de personne partout dans le monde.
   On peut remarquer que les premiers pays à avoir participer a la coupe du monde sont les champions actuels comme l'Uruguay,la France,
   l'Argentine et autre.  </p>
- 
-  
- <h2>L'histoire de la coupe du monde</h2>
- La FIFA confie l'organisation de la première édition de la Coupe du monde de football association2, en 1930, à l'Uruguay, double champion 
+  <Histoirecdm
+ titre="L'histoire de la coupe du monde"
+ >
+ paragraphe="La FIFA confie l'organisation de la première édition de la Coupe du monde de football association2, en 1930, à l'Uruguay, double champion 
  olympique et qui fête le centenaire de son indépendance cette année là. Treize pays participent à cette première édition dont seulement 4
   pays européens: Mexique, Chili, Argentine, Brésil, Bolivie, Pérou, Uruguay, Paraguay, États-Unis, France, Yougoslavie, Roumanie, Belgique.
    Beaucoup de pays situés hors du continent américain avaient reculé devant la longueur du déplacement en bateau, seule possibilité de 
@@ -23,17 +25,24 @@ Le dimanche 13 juillet 1930 devant plus de 2000 spectateurs, Lucien Laurent insc
 football face au Mexique, à la 19e minute.
 
 Le 30 juillet, au stade Centenario (100000places), a lieu la première finale de la coupe du monde. L'Uruguay triomphe 4-2 de l'Argentine.
- Le capitaine uruguayen José Nasazzi se voit remettre le trophée de la Coupe du monde de football association.
- 
- 
- <h2>Histoire de l'Afrique pendant les différentes coupes du monde</h2><!-- Add your site or application content here -->
-  <p>L'afrique est un continent qui a toujours eu du mal pendant les coupes du monde. A ce jour elle ne compte aucun champion
-    du monde. Seul 3 pays on réussi a accéder au quart de finale: le Cameroun, le Ghana et le Sénégal mais récemment 
-    l'équipe du Maroc aussi surnommé "Les Lions de l'atlas" a réussi a franchir ce cape en gagnant contre le Portugal 1 à 0.</p>
+ Le capitaine uruguayen José Nasazzi se voit remettre le trophée de la Coupe du monde de football association."
+ </Histoirecdm>
+ <Histoirecdm
+ titre="Histoire de l'Afrique pendant les différentes coupes du monde">
+ L'afrique est un continent qui a toujours eu du mal pendant les coupes du monde. A ce jour elle ne compte aucun champion du monde. Seul 3 pays on réussi a accéder au quart de finale: le Cameroun, le Ghana et le Sénégal mais récemment  l'équipe du Maroc aussi surnommé ”Les Lions de l'atlas” a réussi a franchir ce cape en gagnant contre le Portugal 1 à 0.
+</Histoirecdm>
+
+ <h2>Histoire de l'Europe pendants les différentes coupes du monde</h2>
+<p>A l'inverse de l'Afrique, l'Europe est un continent qui a vu naître beaucoup de champion comme Kylian Mbappé, titulaire en 
+ équipe de France ou même Cristiano Ronaldo une légende vivante du football.
+Aujourd'hui l'Europe comptabilise plus de 12 victoires en coupe du monde."</p>
+ <!-- Add your site or application content here -->
+
+  
   <h2>Histoire de l'Europe pendants les différentes coupes du monde</h2>
   <p>A l'inverse de l'Afrique, l'Europe est un continent qui a vu naître beaucoup de champion comme Kylian Mbappé, titulaire en 
     équipe de France ou même Cristiano Ronaldo une légende vivante du football.
-Aujourd'hui l'Europe comptabilise plus de 12 victoires.
+Aujourd'hui l'Europe comptabilise plus de 12 victoires en coupe du monde.
   </p>
   <h2>Histoire de l'Amérique du sud pendant les différentes coupes du monde</h2>
  <p>Ce qui est sur entre l'Amérique du nord et du sud c'est que l'Amérique du sud comptabilise plus de champion comme le Brésil ou 
@@ -45,9 +54,10 @@ Aujourd'hui l'Europe comptabilise plus de 12 victoires.
 
   Deux nations ont atteint les huitièmes de finale, le Japon à atteint par trois fois (2002, 2006 et 2018) et l'Arabie saoudite une seule 
   fois en 1994. </p>
-		
-  <a href="/coupe-du-monde/resultats.html">Voir les meilleurs joueurs par continent de l'équipe</a>
-	</main>
+
+
+   
+</main>
 </Layout>
 
 <style>
