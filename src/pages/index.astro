@@ -1,0 +1,96 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<h1>L'Histoire de la coupe du monde au file des années</h1>
+
+ <p>Aujourd'hui la coupe du monde est un évenement attendu par des milliers de personne partout dans le monde.
+  On peut remarquer que les premiers pays à avoir participer a la coupe du monde sont les champions actuels comme l'Uruguay,la France,
+  l'Argentine et autre.  </p>
+ 
+  
+ <h2>L'histoire de la coupe du monde</h2>
+ La FIFA confie l'organisation de la première édition de la Coupe du monde de football association2, en 1930, à l'Uruguay, double champion 
+ olympique et qui fête le centenaire de son indépendance cette année là. Treize pays participent à cette première édition dont seulement 4
+  pays européens: Mexique, Chili, Argentine, Brésil, Bolivie, Pérou, Uruguay, Paraguay, États-Unis, France, Yougoslavie, Roumanie, Belgique.
+   Beaucoup de pays situés hors du continent américain avaient reculé devant la longueur du déplacement en bateau, seule possibilité de 
+   transport à l'époque.
+
+Le dimanche 13 juillet 1930 devant plus de 2000 spectateurs, Lucien Laurent inscrit le premier but de la première coupe du monde de 
+football face au Mexique, à la 19e minute.
+
+Le 30 juillet, au stade Centenario (100000places), a lieu la première finale de la coupe du monde. L'Uruguay triomphe 4-2 de l'Argentine.
+ Le capitaine uruguayen José Nasazzi se voit remettre le trophée de la Coupe du monde de football association.
+ 
+ 
+ <h2>Histoire de l'Afrique pendant les différentes coupes du monde</h2><!-- Add your site or application content here -->
+  <p>L'afrique est un continent qui a toujours eu du mal pendant les coupes du monde. A ce jour elle ne compte aucun champion
+    du monde. Seul 3 pays on réussi a accéder au quart de finale: le Cameroun, le Ghana et le Sénégal mais récemment 
+    l'équipe du Maroc aussi surnommé "Les Lions de l'atlas" a réussi a franchir ce cape en gagnant contre le Portugal 1 à 0.</p>
+  <h2>Histoire de l'Europe pendants les différentes coupes du monde</h2>
+  <p>A l'inverse de l'Afrique, l'Europe est un continent qui a vu naître beaucoup de champion comme Kylian Mbappé, titulaire en 
+    équipe de France ou même Cristiano Ronaldo une légende vivante du football.
+Aujourd'hui l'Europe comptabilise plus de 12 victoires.
+  </p>
+  <h2>Histoire de l'Amérique du sud pendant les différentes coupes du monde</h2>
+ <p>Ce qui est sur entre l'Amérique du nord et du sud c'est que l'Amérique du sud comptabilise plus de champion comme le Brésil ou 
+  l'Uruguay.En parlant de l'Uruguay, c'est le premier pays à avoir gagné la coupe du monde.</p>
+  <h2>Histoire de l'Asie pendant les différentes coupes du monde</h2>
+ <p>Seuls treize membres de l'AFC ont réussi à atteindre la phase finale de la Coupe du monde depuis sa création en 1930. La Corée du Sud est
+   la seule nation de l'AFC à avoir atteint le dernier carré d'une Coupe du monde (demi-finaliste de la compétition qu'elle a organisée 
+   conjointement avec le Japon en 2002). La Corée du Nord est la seule nation asiatique à avoir franchi le cap des quarts de finale en 1966.
+
+  Deux nations ont atteint les huitièmes de finale, le Japon à atteint par trois fois (2002, 2006 et 2018) et l'Arabie saoudite une seule 
+  fois en 1994. </p>
+		
+  <a href="/coupe-du-monde/resultats.html">Voir les meilleurs joueurs par continent de l'équipe</a>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid rgba(var(--accent), 25%);
+		background-color: white;
+		padding: 1rem;
+		border-radius: 0.4rem;
+	}
+	.instructions code {
+		font-size: 0.875em;
+		font-weight: bold;
+		background: rgba(var(--accent), 12%);
+		color: rgb(var(--accent));
+		border-radius: 4px;
+		padding: 0.3em 0.45em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+</style>
